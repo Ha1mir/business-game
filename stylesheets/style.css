@@ -1,0 +1,1023 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+label {
+  display: block;
+}
+
+button {
+  border: none;
+
+  cursor: pointer;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  padding: 5px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+
+  background-color: black;
+  color: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width: 100%;
+  min-width: 320px;
+
+  border: 1px solid white;
+  background-image: url("../svg/background.svg");
+  background-size: cover;
+}
+
+.header {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+
+  border: 1px solid white;
+  background-color: rgb(7, 34, 85);
+
+  overflow-y: auto;
+}
+
+.header_team-name {
+  margin-bottom: 5px;
+}
+
+.header_stat-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px;
+  width: 100%;
+}
+
+.stat-list_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: calc((100% - 4px) / 3);
+  margin-bottom: 5px;
+  padding: 4px;
+
+  text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.stat-list_item-value {
+  font-size: 1.2rem;
+}
+
+.stat-list_item-img {
+  object-position: left center;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 2px;
+}
+
+.header_equip {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px;
+  width: 100%;
+  margin-top: 5px;
+
+  text-transform: capitalize;
+}
+
+.equip_specs-wrapper_spec-img {
+  object-position: left center;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 5px;
+}
+
+.equip_specs-wrapper_ammo-img {
+  object-position: left center;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 5px;
+}
+
+.equip_sick-crew-wrapper_crew-img {
+  object-position: left center;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 5px;
+}
+
+.equip_item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: calc(50% - 2px);
+  padding: 1rem 5px 5px 5px;
+
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.equip_item_type-name {
+  position: absolute;
+  top: -10px;
+
+  background-color: rgb(7, 34, 85);
+}
+
+.equip_ammo-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 2.4rem;
+}
+
+.equip_specs-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 2.4rem;
+}
+
+.header_equip_sick-crew {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.equip_sick-crew-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 2.4rem;
+  width: 100%;
+}
+
+.main_init-form-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main_init-form {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 300px;
+  padding: 5px;
+
+  text-transform: capitalize;
+
+  background-color: black;
+  border: 1px solid white;
+}
+
+.init-form_team-name-label {
+  margin: 5px;
+
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.init-form_specs-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.specs-block_header {
+  width: 100%;
+  margin: 5px;
+
+  font-size: 1.6rem;
+}
+
+.specs-block_add-spec-label {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 2px;
+  width: calc(50% - 10px);
+  margin: 5px;
+}
+
+.init-form_meds-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.meds-block_add-meds-label {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 2px;
+  width: calc(50% - 10px);
+  margin: 5px;
+}
+
+.meds-block_add-meds {
+  width: 40px;
+}
+
+.init-form_shuttles-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.shuttles-block_add-shuttle-label {
+  width: calc(50% - 10px);
+  margin: 5px;
+}
+
+.init-form_ammo-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.ammo-block_add-shield-label {
+  width: calc(50% - 10px);
+  margin: 5px;
+}
+
+.ammo-block_add-lasgun-label {
+  width: calc(50% - 10px);
+  margin: 5px;
+}
+
+.init-form_food-block {
+  width: calc(50% - 10px);
+  margin: 5px;
+}
+
+.init-form_fuel-block {
+  width: calc(50% - 10px);
+  margin: 5px;
+}
+
+.food-block_input {
+  width: 100%;
+}
+
+.fuel-block_input {
+  width: 100%;
+}
+
+.init-form_submit {
+  width: 120px;
+  height: 30px;
+
+  text-transform: capitalize;
+}
+
+/* map */
+.main_glx-map {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-top: 15px;
+}
+
+.main_glx-map_wrapper {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, calc(((100vh - 300px) / 6) - 10px));
+  width: 100%;
+
+  text-transform: capitalize;
+}
+
+.main_glx-map_starship {
+  position: absolute;
+  z-index: 2;
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: normal;
+  align-self: normal;
+  width: 20px;
+  height: 20px;
+
+  background-color: green;
+  border: 1px solid red;
+  border-radius: 50%;
+
+  transition: transform 2s ease-in-out;
+}
+
+.glx-map_base {
+  grid-row: 1;
+  grid-column: 3;
+
+  background-image: url("../svg/planets/base.svg");
+}
+
+.glx-map_primega {
+  grid-row: 2;
+  grid-column: 1;
+
+  background-image: url("../svg/planets/primega.svg");
+}
+
+.glx-map_florig {
+  grid-row: 2;
+  grid-column: 4;
+
+  background-image: url("../svg/planets/florig.svg");
+}
+
+.glx-map_tennay {
+  grid-row: 3;
+  grid-column: 1;
+
+  background-image: url("../svg/planets/tennay.svg");
+}
+
+.glx-map_kwod {
+  grid-row: 3;
+  grid-column: 3;
+
+  background-image: url("../svg/planets/kwod.svg");
+}
+
+.glx-map_baldoc {
+  grid-row: 3;
+  grid-column: 5;
+
+  background-image: url("../svg/planets/baldoc.svg");
+}
+
+.glx-map_porlog {
+  grid-row: 4;
+  grid-column: 1;
+
+  background-image: url("../svg/planets/porlog.svg");
+}
+
+.glx-map_cremmin {
+  grid-row: 4;
+  grid-column: 2;
+
+  background-image: url("../svg/planets/cremmin.svg");
+}
+
+.glx-map_allagad {
+  grid-row: 4;
+  grid-column: 3;
+
+  background-image: url("../svg/planets/allagad.svg");
+}
+
+.glx-map_nomrid {
+  grid-row: 4;
+  grid-column: 4;
+
+  background-image: url("../svg/planets/nomrid.svg");
+}
+
+.glx-map_gormint {
+  grid-row: 5;
+  grid-column: 1;
+
+  background-image: url("../svg/planets/gormint.svg");
+}
+
+.glx-map_tensal {
+  grid-row: 5;
+  grid-column: 5;
+
+  background-image: url("../svg/planets/tensal.svg");
+}
+
+.glx-map_enernova {
+  grid-row: 6;
+  grid-column: 3;
+
+  background-image: url("../svg/planets/enernova.svg");
+}
+
+.glx-map_planet {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+
+  text-shadow: 2px 2px 2px black;
+
+  border: 2px solid lightskyblue;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+}
+
+.glx-map_fly-to-btn {
+  height: 20px;
+  width: 35px;
+  margin-top: 20px;
+
+  text-transform: capitalize;
+
+  color: white;
+
+  background-color: darkslategrey;
+}
+
+.glx-map_fly-to-btn:hover {
+  border: 2px solid rgb(56, 255, 105);
+  background-color: green;
+}
+
+.glx-map_fly-to-btn:focus {
+  outline: 2px solid rgb(56, 255, 105);
+  outline-offset: 2px;
+}
+
+.glx-map_land-btn {
+  height: 20px;
+  width: 35px;
+  margin-top: 20px;
+
+  text-transform: capitalize;
+
+  color: white;
+
+  background-color: darkslategrey;
+}
+
+.glx-map_land-btn:hover {
+  border: 2px solid rgb(56, 255, 105);
+  background-color: green;
+}
+
+.glx-map_land-btn:focus {
+  outline: 2px solid rgb(56, 255, 105);
+  outline-offset: 2px;
+}
+
+/* map end */
+
+/* planet interface */
+
+.map_planet-view_wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 6;
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("../images/me3_citadel-wallpaper-1920x1080.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(50, 50, 50);
+}
+
+.planet-view_form {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  width: 300px;
+  padding: 10px;
+
+  text-transform: capitalize;
+
+  background-color: rgba(60, 60, 60, 0.5);
+  border: 1px solid white;
+}
+
+.planet-view_food-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+  width: 100%;
+}
+
+.planet-view_form_food-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.planet-view_food_input {
+  height: 20px;
+
+  color: white;
+
+  background-color: black;
+}
+
+.planet-view_food_buy-btn {
+  width: 50px;
+  height: 20px;
+
+  color: white;
+  text-transform: capitalize;
+
+  background-color: black;
+}
+
+.planet-view_food_buy-btn:hover {
+  color: black;
+
+  background-color: white;
+}
+
+.planet-view_food_buy-btn:focus {
+  outline: 1px solid white;
+  outline-offset: 1px;
+}
+
+.planet-view_form_fuel-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.planet-view_fuel_input {
+  height: 20px;
+
+  color: white;
+
+  background-color: black;
+}
+
+.planet-view_fuel-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+  width: 100%;
+}
+
+.planet-view_fuel_buy-btn {
+  width: 50px;
+  height: 20px;
+
+  color: white;
+  text-transform: capitalize;
+
+  background-color: black;
+}
+
+.planet-view_fuel_buy-btn:hover {
+  color: black;
+
+  background-color: white;
+}
+
+.planet-view_fuel_buy-btn:focus {
+  outline: 1px solid white;
+  outline-offset: 1px;
+}
+
+.planet-view_form_buttons-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+.planet-view_form_repair-button {
+  width: 60px;
+  height: 25px;
+
+  color: white;
+  text-transform: capitalize;
+
+  background-color: black;
+}
+
+.planet-view_form_repair-button:hover {
+  color: black;
+
+  background-color: white;
+}
+
+.planet-view_form_repair-button:focus {
+  outline: 1px solid white;
+  outline-offset: 1px;
+}
+
+.planet-view_form_heal-button {
+  width: 60px;
+  height: 25px;
+
+  color: white;
+  text-transform: capitalize;
+
+  background-color: black;
+}
+
+.planet-view_form_heal-button:hover {
+  color: black;
+
+  background-color: white;
+}
+
+.planet-view_form_heal-button:focus {
+  outline: 1px solid white;
+  outline-offset: 1px;
+}
+
+.planet-view_form_takeoff-button {
+  width: 60px;
+  height: 25px;
+
+  color: white;
+  text-transform: capitalize;
+
+  background-color: black;
+}
+
+.planet-view_form_takeoff-button:hover {
+  color: black;
+
+  background-color: white;
+}
+
+.planet-view_form_takeoff-button:focus {
+  outline: 1px solid white;
+  outline-offset: 1px;
+}
+
+/* custom alert */
+.custom-alert_wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.custom-alert_window {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 5px;
+  width: 300px;
+  padding: 10px;
+
+  border: 2px solid white;
+  background-color: rgb(60, 60, 60);;
+}
+
+.custom-alert_header {
+  width: 100%;
+  margin-bottom: 20px;
+
+  text-transform: capitalize;
+}
+
+.custom-alert_message {
+  width: 100%;
+  margin-bottom: 10px;
+
+  white-space: pre-wrap;
+}
+
+.custom-alert_conf-btn {
+  width: 40px;
+  height: 20px;
+  margin: 0 auto;
+
+  color: white;
+  text-transform: capitalize;
+
+  background-color: black;
+}
+
+.custom-alert_conf-btn:hover {
+  color: black;
+
+  background-color: white;
+}
+
+.custom-alert_conf-btn:focus {
+  outline: 1px solid white;
+  outline-offset: 1px;
+}
+
+/* custom confirm window */
+
+.custom-confirm_wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 102;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.custom-confirm_window {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 5px;
+  width: 300px;
+  padding: 10px;
+
+  border: 2px solid white;
+  background-color: black;
+}
+
+.custom-confirm_header {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.custom-confirm_message {
+  width: 100%;
+  white-space: pre-wrap;
+}
+
+.custom-confirm_conf-btn {
+  width: 50px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.custom-confirm_cancel-btn {
+  width: 50px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+/* heal in space */
+
+.heal-in-space_wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.heal-in-space_window {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 5px;
+  width: 300px;
+  padding: 10px;
+
+  border: 2px solid white;
+  background-color: black;
+}
+
+.heal-in-space_header {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+@media (orientation: landscape) {
+  .main {
+    flex-direction: row;
+  }
+
+  .header {
+    width: 35%;
+  }
+
+  .main_init-form-wrapper {
+    justify-content: flex-end;
+  }
+
+  .main_init-form {
+    right: 20px;
+    width: 60%;
+  }
+
+  .specs-block_add-spec-label {
+    width: calc(25% - 10px);
+  }
+
+  .main_glx-map_wrapper {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, calc(((100vh - 60px) / 5) - 7px));
+  }
+
+  .main_glx-map {
+    width: 65%;
+    margin-top: 0;
+  }
+}
+
+@media (min-height: 640px) and (min-width: 640px) and (orientation: landscape) {
+  .header {
+    width: 30%;
+  }
+
+  .main {
+    flex-direction: row;
+    min-width: 640px;
+  }
+
+  .main_init-form {
+    right: 20px;
+    width: 65%;
+  }
+
+  .main_glx-map {
+    width: 70%;
+  }
+
+  .stat-list_item {
+    width: 100%;
+  }
+}
+
+@media (min-height: 640px) and (min-width: 640px) and (orientation: portrait) {
+  .main_init-form-wrapper {
+    justify-content: center;
+  }
+
+  .main_init-form {
+    right: 0;
+    width: 400px;
+  }
+
+  .custom-alert_window {
+    width: 500px;
+  }
+
+  .main_glx-map_wrapper {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, calc(((100vh - 380px) / 6) - 10px));
+  }
+}
+
+@media (min-height: 640px) and (min-width: 640px) {
+  html {
+    font-size: 16px;
+  }
+
+  .glx-map_planet {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (min-height: 900px) and (min-width: 1024px) and (orientation: landscape) {
+  .header {
+    width: 30%;
+  }
+
+  .main {
+    max-width: 1200px;
+  }
+
+  .main_init-form-wrapper {
+    justify-content: center;
+  }
+
+  .main_init-form {
+    width: 600px;
+  }
+
+  .main_glx-map {
+    width: 70%;
+  }
+
+  .stat-list_item {
+    width: 100%;
+  }
+}
+
+@media (min-height: 900px) and (min-width: 1024px) and (orientation: portrait) {
+  .main_init-form {
+    width: 80%;
+  }
+
+  .custom-alert_window {
+    width: 500px;
+  }
+
+  .main_glx-map_wrapper {
+    grid-template-rows: repeat(6, calc(((100vh - 440px) / 6) - 10px));
+  }
+}
+
+@media (min-height: 900px) and (min-width: 1024px) {
+  html {
+    font-size: 20px;
+  }
+
+  .main_init-form-wrapper {
+    position: absolute;
+  }
+
+  .main_init-form {
+    right: 0;
+  }
+
+  .glx-map_planet {
+    width: 80px;
+    height: 80px;
+  }
+
+  .glx-map_fly-to-btn {
+    height: 50px;
+    width: 50px;
+
+    font-size: 1rem;
+  }
+
+  .glx-map_land-btn {
+    height: 50px;
+    width: 50px;
+
+    font-size: 1rem;
+  }
+
+  .custom-alert_window {
+    width: 600px;
+  }
+}

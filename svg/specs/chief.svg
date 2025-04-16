@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="122px" height="117px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1711 1652"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str3 {stroke:black;stroke-width:14;stroke-miterlimit:22.9256}
+    .str2 {stroke:#2B2A29;stroke-width:28;stroke-miterlimit:22.9256}
+    .str0 {stroke:black;stroke-width:28;stroke-miterlimit:22.9256}
+    .str1 {stroke:#2B2A29;stroke-width:33;stroke-miterlimit:22.9256}
+    .fil2 {fill:none}
+    .fil4 {fill:black}
+    .fil5 {fill:gray}
+    .fil0 {fill:gray}
+    .fil3 {fill:#99FFFF}
+    .fil1 {fill:#CCCCCC}
+    .fil6 {fill:white}
+   ]]>
+  </style>
+ </defs>
+ <g id="chief">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0 str0" x="176" y="631" width="1352" height="784" rx="28" ry="28"/>
+  <path class="fil1 str0" d="M500 828l746 0c248,0 450,203 450,451l0 310c0,15 -12,28 -28,28l-1591 0c-15,0 -28,-13 -28,-28l0 -310c0,-248 203,-451 451,-451z"/>
+  <ellipse class="fil1 str0" cx="852" cy="519" rx="521" ry="505"/>
+  <line class="fil2 str0" x1="401" y1="1251" x2="401" y2= "1617" />
+  <line class="fil2 str0" x1="1345" y1="1251" x2="1345" y2= "1617" />
+  <path class="fil2 str0" d="M332 490c346,-170 693,-170 1041,0"/>
+  <path class="fil2 str0" d="M370 711c346,160 669,160 968,0"/>
+  <path class="fil3 str1" d="M370 711c147,68 289,107 428,117 49,4 99,4 147,0 133,-10 262,-48 387,-114 12,-27 21,-54 28,-83 8,-36 13,-74 13,-112 0,-10 -1,-20 -1,-29 -347,-170 -694,-170 -1040,0 -1,9 -1,19 -1,29 0,38 4,76 13,112 6,28 15,54 26,80z"/>
+  <line class="fil2 str0" x1="1429" y1="617" x2="1429" y2= "139" />
+  <circle class="fil4 str0" cx="1429" cy="139" r="56"/>
+  <circle class="fil5 str2" cx="401" cy="1251" r="387"/>
+  <g id="_2599857293632">
+   <path class="fil6 str3" d="M506 1065c18,-9 37,-13 58,-13 69,0 126,53 126,118 0,66 -57,119 -126,119l0 210 -337 0 0 -210c-64,-6 -114,-57 -114,-119 0,-65 56,-118 126,-118 17,0 33,3 48,8 22,-34 62,-58 108,-58 48,0 90,25 111,63z"/>
+   <line class="fil2 str3" x1="395" y1="1424" x2="395" y2= "1268" />
+   <line class="fil2 str3" x1="314" y1="1268" x2="314" y2= "1424" />
+   <line class="fil2 str3" x1="479" y1="1268" x2="479" y2= "1424" />
+   <line class="fil2 str3" x1="227" y1="1424" x2="564" y2= "1424" />
+  </g>
+ </g>
+</svg>

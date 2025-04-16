@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="51px" height="51px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1515 1500"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:black;stroke-width:30;stroke-miterlimit:22.9256}
+    .fil1 {fill:none}
+    .fil0 {fill:white}
+    .fil2 {fill:black;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="days">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0 str0" x="15" y="103" width="1337" height="1234" rx="114" ry="114"/>
+  <line class="fil1 str0" x1="369" y1="0" x2="369" y2= "251" />
+  <line class="fil1 str0" x1="986" y1="0" x2="986" y2= "251" />
+  <path class="fil2" d="M293 980l-61 0 0 -390c-14,14 -34,28 -58,42 -24,14 -45,25 -64,32l0 -59c34,-16 64,-36 90,-59 25,-23 43,-45 54,-66l39 0 0 500z"/>
+  <path id="1" class="fil2" d="M646 980l0 -119 -216 0 0 -57 227 -322 50 0 0 322 68 0 0 57 -68 0 0 119 -61 0zm0 -176l0 -224 -156 224 156 0z"/>
+  <line class="fil1 str0" x1="15" y1="331" x2="1352" y2= "331" />
+  <circle class="fil0 str0" cx="1140" cy="1125" r="360"/>
+  <polyline class="fil1 str0" points="1140,845 1140,1125 1341,1241 "/>
+ </g>
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="122px" height="117px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 5515 5326"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str3 {stroke:white;stroke-width:227;stroke-miterlimit:22.9256}
+    .str2 {stroke:#2B2A29;stroke-width:91;stroke-miterlimit:22.9256}
+    .str0 {stroke:black;stroke-width:91;stroke-miterlimit:22.9256}
+    .str4 {stroke:white;stroke-width:91;stroke-miterlimit:22.9256}
+    .str1 {stroke:#2B2A29;stroke-width:107;stroke-miterlimit:22.9256}
+    .str5 {stroke:white;stroke-width:136;stroke-miterlimit:22.9256}
+    .fil2 {fill:none}
+    .fil4 {fill:black}
+    .fil5 {fill:gray}
+    .fil0 {fill:gray}
+    .fil3 {fill:#99FFFF}
+    .fil1 {fill:#CCCCCC}
+    .fil6 {fill:white}
+   ]]>
+  </style>
+ </defs>
+ <g id="navigator">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0 str0" x="567" y="2035" width="4357" height="2528" rx="91" ry="91"/>
+  <path class="fil1 str0" d="M1611 2671l2406 0c799,0 1452,654 1452,1452l0 999c0,50 -40,91 -90,91l-5129 0c-50,0 -91,-41 -91,-91l0 -999c0,-798 653,-1452 1452,-1452z"/>
+  <ellipse class="fil1 str0" cx="2746" cy="1672" rx="1679" ry="1627"/>
+  <line class="fil2 str0" x1="1294" y1="4033" x2="1294" y2= "5213" />
+  <line class="fil2 str0" x1="4335" y1="4033" x2="4335" y2= "5213" />
+  <path class="fil2 str0" d="M1069 1580c1118,-548 2237,-548 3356,0"/>
+  <path class="fil2 str0" d="M1192 2291c1118,518 2158,518 3121,0"/>
+  <path class="fil3 str1" d="M1192 2292c474,219 934,346 1379,379 161,12 319,12 476,0 430,-33 846,-156 1249,-370 36,-85 66,-174 87,-266 28,-116 42,-238 42,-363 0,-31 0,-63 -2,-94 -1119,-546 -2237,-546 -3354,2 -1,30 -2,61 -2,92 0,125 14,247 42,363 20,89 49,174 83,257z"/>
+  <line class="fil2 str0" x1="4607" y1="1990" x2="4607" y2= "447" />
+  <circle class="fil4 str0" cx="4607" cy="447" r="182"/>
+  <circle class="fil5 str2" cx="1294" cy="4033" r="1248"/>
+  <circle class="fil2 str3" cx="1294" cy="4033" r="859"/>
+  <circle class="fil6 str4" cx="1294" cy="4033" r="325"/>
+  <line class="fil2 str5" x1="1294" y1="4033" x2="479" y2= "3760" />
+  <line class="fil2 str5" x1="1294" y1="4033" x2="2108" y2= "3760" />
+  <line class="fil2 str5" x1="1294" y1="4033" x2="1294" y2= "4891" />
+ </g>
+</svg>

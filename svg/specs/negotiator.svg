@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="122px" height="117px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2522 2435"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str2 {stroke:#2B2A29;stroke-width:42;stroke-miterlimit:22.9256}
+    .str0 {stroke:black;stroke-width:42;stroke-miterlimit:22.9256}
+    .str1 {stroke:#2B2A29;stroke-width:49;stroke-miterlimit:22.9256}
+    .fil2 {fill:none}
+    .fil4 {fill:black}
+    .fil5 {fill:gray}
+    .fil0 {fill:gray}
+    .fil3 {fill:#99FFFF}
+    .fil1 {fill:#CCCCCC}
+    .fil6 {fill:white}
+   ]]>
+  </style>
+ </defs>
+ <g id="negotiator">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0 str0" x="259" y="931" width="1992" height="1156" rx="42" ry="42"/>
+  <path class="fil1 str0" d="M737 1221l1100 0c365,0 664,299 664,664l0 457c0,23 -19,42 -42,42l-2345 0c-23,0 -41,-19 -41,-42l0 -457c0,-365 298,-664 664,-664z"/>
+  <ellipse class="fil1 str0" cx="1256" cy="765" rx="768" ry="744"/>
+  <line class="fil2 str0" x1="591" y1="1844" x2="591" y2= "2384" />
+  <line class="fil2 str0" x1="1982" y1="1844" x2="1982" y2= "2384" />
+  <path class="fil2 str0" d="M489 722c511,-250 1023,-250 1535,0"/>
+  <path class="fil2 str0" d="M545 1048c511,237 987,237 1427,0"/>
+  <path class="fil3 str1" d="M545 1048c217,100 427,158 631,173 73,6 146,6 217,0 197,-15 387,-71 571,-169 17,-39 30,-79 40,-121 13,-54 20,-109 20,-166 0,-15 -1,-29 -2,-43 -511,-250 -1022,-250 -1533,0 -1,14 -1,28 -1,43 0,57 6,112 19,166 9,40 22,79 38,117z"/>
+  <line class="fil2 str0" x1="2107" y1="910" x2="2107" y2= "204" />
+  <circle class="fil4 str0" cx="2107" cy="204" r="83"/>
+  <line class="fil2 str0" x1="774" y1="1964" x2="774" y2= "2374" />
+  <circle class="fil5 str2" cx="591" cy="1844" r="571"/>
+  <g>
+   <path class="fil6" d="M434 1985l0 217 -133 0 0 -217 133 0zm-230 -286l349 0 0 286 -349 0 0 -286zm326 41c176,-8 334,-67 473,-178l0 561c-139,-111 -297,-171 -473,-179l0 -204z"/>
+   <path id="1" class="fil2 str0" d="M434 1985l0 217 -133 0 0 -217m-97 -286l349 0 0 286 -349 0 0 -286zm326 41c176,-8 334,-67 473,-178l0 561c-139,-111 -297,-171 -473,-179"/>
+  </g>
+ </g>
+</svg>

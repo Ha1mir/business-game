@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <h3 class="header_team-name"></h3>
+        <ul class="header_stat-list">
+          <li class="stat-list_item">
+            <img class="stat-list_item-img" src="svg/yonkels.svg" alt="yonkels" title="yonkels">
+            <span class="stat-list_item-value stat-list_yonkels"></span>
+          </li>
+          <li class="stat-list_item">
+            <img class="stat-list_item-img" src="svg/food.svg" alt="food" title="food">
+            <span class="stat-list_item-value stat-list_food"></span>
+          </li>
+          <li class="stat-list_item">
+            <img class="stat-list_item-img" src="svg/fuel.svg" alt="fuel" title="fuel">
+            <span class="stat-list_item-value stat-list_fuel"></span>
+          </li>
+          <li class="stat-list_item">
+            <img class="stat-list_item-img" src="svg/crew.svg" alt="crew" title="crew">
+            <span class="stat-list_item-value stat-list_crew"></span>
+          </li>
+          <li class="stat-list_item">
+            <img class="stat-list_item-img" src="svg/weight.svg" alt="weight" title="weight">
+            <span class="stat-list_item-value stat-list_weight"></span>
+          </li>
+          <li class="stat-list_item">
+            <img class="stat-list_item-img" src="svg/date.svg" alt="days" title="days">
+            <span class="stat-list_item-value stat-list_days"></span>
+          </li>
+          <li class="stat-list_item">
+            <img class="stat-list_item-img" src="svg/ship_state.svg" alt="ship state" title="ship state">
+            <span class="stat-list_item-value stat-list_state"></span>
+          </li>
+          <li class="stat-list_item">
+            <img class="stat-list_item-img" src="svg/crew_state.svg" alt="crew state" title="crew state">
+            <span class="stat-list_item-value stat-list_crew-state"></span>
+          </li>
+          <li class="stat-list_item">
+            <img class="stat-list_item-img" src="svg/aidkit_a.svg" alt="aidkit A" title="aidkit A">
+            <span class="stat-list_item-value stat-list_aidkit-a"></span>
+          </li>
+          <li class="stat-list_item">
+            <img class="stat-list_item-img" src="svg/aidkit_b.svg" alt="aidkit B" title="aidkit B">
+            <span class="stat-list_item-value stat-list_aidkit-b"></span>
+          </li>
+        </ul>
+        <ul class="header_equip">
+          <!-- <li class="equip_item equip_shuttles">
+            <h3>shuttles: </h3>
+            <div class="equip_shuttles-wrapper"></div>
+          </li> -->
+          <li class="equip_item equip_ammo">
+            <div class="equip_item_type-name">ammo</div>
+            <div class="equip_ammo-wrapper"></div>
+          </li>
+          <li class="equip_item header_equip_specs">
+            <div class="equip_item_type-name">specs</div>
+            <div class="equip_specs-wrapper"></div>
+          </li>
+          <li class="equip_item header_equip_sick-crew">
+            <div class="equip_item_type-name">sicked crew</div>
+            <div class="equip_sick-crew-wrapper"></div>
+          </li>
+        </ul>
+      </header>
+      <div class="main_glx-map">
+        <div class="main_init-form-wrapper">
+          <form class="main_init-form">
+            <label class="init-form_team-name-label">
+              <span class="init-form_team-name_desc">team name</span>
+              <input class="init-form_team-name" type="text" name="team-name" value="Voyager">
+            </label>
+            <div class="init-form_specs-block">
+              <h2 class="specs-block_header">specialists</h2>
+              <label class="specs-block_add-spec-label">
+                <input class="specs-block_add-spec" type="checkbox" name="add-spec_medic" value="medic">
+                <span class="specs-block_add-spec_desc">medic</span>
+              </label>
+              <label class="specs-block_add-spec-label">
+                <input class="specs-block_add-spec" type="checkbox" name="add-spec_chief" value="chief">
+                <span class="specs-block_add-spec_desc">chief</span>
+              </label>
+              <label class="specs-block_add-spec-label">
+                <input class="specs-block_add-spec" type="checkbox" name="add-spec_engineer" value="engineer">
+                <span class="specs-block_add-spec_desc">engineer</span>
+              </label>
+              <label class="specs-block_add-spec-label">
+                <input class="specs-block_add-spec" type="checkbox" name="add-spec_translator" value="translator">
+                <span class="specs-block_add-spec_desc">translator</span>
+              </label>
+              <label class="specs-block_add-spec-label">
+                <input class="specs-block_add-spec" type="checkbox" name="add-spec_navigator" value="navigator">
+                <span class="specs-block_add-spec_desc">navigator</span>
+              </label>
+              <label class="specs-block_add-spec-label">
+                <input class="specs-block_add-spec" type="checkbox" name="add-spec_negotiator" value="negotiator">
+                <span class="specs-block_add-spec_desc">negotiator</span>
+              </label>
+              <label class="specs-block_add-spec-label">
+                <input class="specs-block_add-spec" type="checkbox" name="add-spec_scout" value="scout">
+                <span class="specs-block_add-spec_desc">scout</span>
+              </label>
+              <label class="specs-block_add-spec-label">
+                <input class="specs-block_add-spec" type="checkbox" name="add-spec_armourer" value="armourer">
+                <span class="specs-block_add-spec_desc">armourer</span>
+              </label>
+            </div>
+            <div class="init-form_meds-block">
+              <h2 class="specs-block_header">medical resources</h2>
+              <label class="meds-block_add-meds-label">
+                <input class="meds-block_add-meds" type="number" name="aidkitsA" min="0" max="3" step="1" value="0">
+                <span class="meds-block_add-meds_desc">aid kit a</span>
+              </label>
+              <label class="meds-block_add-meds-label">
+                <input class="meds-block_add-meds" type="number" name="aidkitsB" min="0" max="3" step="1" value="0">
+                <span class="meds-block_add-meds_desc">aid kit b</span>
+              </label>
+            </div>
+            <!-- <div class="init-form_shuttles-block">
+              <h2 class="specs-block_header">shuttles</h2>
+              <label class="shuttles-block_add-shuttle-label">
+                <input class="shuttles-block_add-shuttle" type="checkbox" name="add-shuttle[]" value="shuttleA">
+                <span class="shuttles-block_add-shuttle_desc">shuttle a</span>
+              </label>
+              <label class="shuttles-block_add-shuttle-label">
+                <input class="shuttles-block_add-shuttle" type="checkbox" name="add-shuttle[]" value="shuttleB">
+                <span class="shuttles-block_add-shuttle_desc">shuttle b</span>
+              </label>
+              <label class="shuttles-block_add-shuttle-label">
+                <input class="shuttles-block_add-shuttle" type="checkbox" name="add-shuttle[]" value="shuttleC">
+                <span class="shuttles-block_add-shuttle_desc">shuttle c</span>
+              </label>
+            </div> -->
+            <div class="init-form_ammo-block">
+              <h2 class="specs-block_header">Ammunition</h2>
+              <label class="ammo-block_add-shield-label">
+                <input class="ammo-block_add-ammo" type="checkbox" name="add-shield[]" value="shieldA">
+                <span class="ammo-block_add-shield_desc">shield a</span>
+              </label>
+              <label class="ammo-block_add-shield-label">
+                <input class="ammo-block_add-ammo" type="checkbox" name="add-shield[]" value="shieldB">
+                <span class="ammo-block_add-shield_desc">shield b</span>
+              </label>
+              <label class="ammo-block_add-lasgun-label">
+                <input class="ammo-block_add-ammo" type="checkbox" name="add-lasgun[]" value="laserGunA">
+                <span class="ammo-block_add-lasgun_desc">lasergun a</span>
+              </label>
+              <label class="ammo-block_add-lasgun-label">
+                <input class="ammo-block_add-ammo" type="checkbox" name="add-lasgun[]" value="laserGunB">
+                <span class="ammo-block_add-lasgun_desc">lasergun b</span>
+              </label>
+            </div>
+            <div class="init-form_food-block">
+              <h3 class="food-block_header">food</h3>
+              <input class="food-block_input" type="range" min="0" max="50000" step="50" value="5000">
+            </div>
+            <div class="init-form_fuel-block">
+              <h3 class="fuel-block_header">fuel</h3>
+              <div class="fuel-block_input-curr-value"></div>
+              <input class="fuel-block_input" type="range" min="0" max="50000" step="100" value="5000">
+            </div>
+            <button class="init-form_submit" type="button">enter the galaxy</button>
+          </form>
+        </div>
+        <div class="main_glx-map_wrapper">
+          <div class="main_glx-map_starship"></div>
+          <div class="glx-map_planet glx-map_base" data-planet-name="base">
+            <span class="glx-map_planet_name">base</span>
+            <button class="glx-map_fly-to-btn glx-map_base_fly-to" type="button" name="glx-map_base_fly-to" data-planet-name="base">fly</button>
+            <button class="glx-map_land-btn" type="button" data-planet-name="base">land</button>
+          </div>
+          <div class="glx-map_planet glx-map_primega" data-planet-name="primega">
+            <span class="glx-map_planet_name">primega</span>
+            <button class="glx-map_fly-to-btn glx-map_primega_fly-to" type="button" name="glx-map_primega_fly-to" data-planet-name="primega">fly</button>
+            <button class="glx-map_land-btn" type="button" data-planet-name="primega">land</button>
+          </div>
+          <div class="glx-map_planet glx-map_florig" data-planet-name="florig">
+            <span class="glx-map_planet_name">florig</span>
+            <button class="glx-map_fly-to-btn glx-map_florig_fly-to" type="button" name="glx-map_florig_fly-to" data-planet-name="florig">fly</button>
+            <button class="glx-map_land-btn" type="button" data-planet-name="florig">land</button>
+          </div>
+          <div class="glx-map_planet glx-map_tennay" data-planet-name="tennay">
+            <span class="glx-map_planet_name">tennay</span>
+            <button class="glx-map_fly-to-btn glx-map_tennay_fly-to" type="button" name="glx-map_tennay_fly-to" data-planet-name="tennay">fly</button>
+            <button class="glx-map_land-btn" type="button" data-planet-name="tennay">land</button>
+          </div>
+          <div class="glx-map_planet glx-map_kwod" data-planet-name="kwod">
+            <span class="glx-map_planet_name">kwod</span>
+            <button class="glx-map_fly-to-btn glx-map_kwod_fly-to" type="button" name="glx-map_kwod_fly-to" data-planet-name="kwod">fly</button>
+            <button class="glx-map_land-btn" type="button" data-planet-name="kwod">land</button>
+          </div>
+          <div class="glx-map_planet glx-map_baldoc" data-planet-name="baldoc">
+            <span class="glx-map_planet_name">baldoc</span>
+            <button class="glx-map_fly-to-btn glx-map_baldoc_fly-to" type="button" name="glx-map_baldoc_fly-to" data-planet-name="baldoc">fly</button>
+            <button class="glx-map_land-btn" type="button" data-planet-name="baldoc">land</button>
+          </div>
+          <div class="glx-map_planet glx-map_porlog" data-planet-name="porlog">
+            <span class="glx-map_planet_name">porlog</span>
+            <button class="glx-map_fly-to-btn glx-map_porlog_fly-to" type="button" name="glx-map_porlog_fly-to" data-planet-name="porlog">fly</button>
+            <button class="glx-map_land-btn" type="button" data-planet-name="porlog">land</button>
+          </div>
+          <div class="glx-map_planet glx-map_cremmin" data-planet-name="cremmin">
+            <span class="glx-map_planet_name">cremmin</span>
+            <button class="glx-map_fly-to-btn glx-map_cremmin_fly-to" type="button" name="glx-map_cremmin_fly-to" data-planet-name="cremmin">fly</button>
+            <button class="glx-map_land-btn" type="button" data-planet-name="cremmin">land</button>
+          </div>
+          <div class="glx-map_planet glx-map_allagad" data-planet-name="allagad">
+            <span class="glx-map_planet_name">allagad</span>
+            <button class="glx-map_fly-to-btn glx-map_allagad_fly-to" type="button" name="glx-map_allagad_fly-to" data-planet-name="allagad">fly</button>
+            <button class="glx-map_land-btn" type="button" data-planet-name="allagad">land</button>
+          </div>
+          <div class="glx-map_planet glx-map_nomrid" data-planet-name="nomrid">
+            <span class="glx-map_planet_name">nomrid</span>
+            <button class="glx-map_fly-to-btn glx-map_nomrid_fly-to" type="button" name="glx-map_nomrid_fly-to" data-planet-name="nomrid">fly</button>
+            <button class="glx-map_land-btn" type="button" data-planet-name="nomrid">land</button>
+          </div>
+          <div class="glx-map_planet glx-map_gormint" data-planet-name="gormint">
+            <span class="glx-map_planet_name">gormint</span>
+            <button class="glx-map_fly-to-btn glx-map_gormint_fly-to" type="button" name="glx-map_gormint_fly-to" data-planet-name="gormint">fly</button>
+            <button class="glx-map_land-btn" type="button" data-planet-name="gormint">land</button>
+          </div>
+          <div class="glx-map_planet glx-map_tensal" data-planet-name="tensal">
+            <span class="glx-map_planet_name">tensal</span>
+            <button class="glx-map_fly-to-btn glx-map_tensal_fly-to" type="button" name="glx-map_tensal_fly-to" data-planet-name="tensal">fly</button>
+            <button class="glx-map_land-btn" type="button" data-planet-name="tensal">land</button>
+          </div>
+          <div class="glx-map_planet glx-map_enernova" data-planet-name="enernova">
+            <span class="glx-map_planet_name">enernova</span>
+            <button class="glx-map_fly-to-btn glx-map_enernova_fly-to" type="button" name="glx-map_enernova_fly-to" data-planet-name="enernova">fly</button>
+            <button class="glx-map_land-btn" type="button" data-planet-name="enernova">land</button>
+          </div>
+        </div>
+        <div class="map_planet-view_wrapper">
+          <form class="planet-view_form">
+            <h3 class="planet-view_form_planet-name"></h3>
+            <div class="planet-view_food-wrapper">
+              <label class="planet-view_form_food-label">
+                <span class="planet-view_food_desc">food: </span>
+                <input class="planet-view_food_input" type="number" min="0" max="50000" step="50" value="0">
+              </label>
+              <button class="planet-view_food_buy-btn" type="button">buy</button>
+            </div>
+            <div class="planet-view_fuel-wrapper">
+              <label class="planet-view_form_fuel-label">
+                <span class="planet-view_fuel_desc">fuel: </span>
+                <input class="planet-view_fuel_input" type="number" min="0" max="50000" step="100" value="0">
+              </label>
+              <button class="planet-view_fuel_buy-btn" type="button">buy</button>
+            </div>
+            <div class="planet-view_form_buttons-wrapper">
+              <button class="planet-view_form_repair-button" type="button">repair</button>
+              <button class="planet-view_form_heal-button" type="button">heal</button>
+              <button class="planet-view_form_takeoff-button" type="button">takeoff</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <div class="custom-alert_wrapper">
+      <div class="custom-alert_window">
+        <h2 class="custom-alert_header">message:</h2>
+        <div class="custom-alert_message"></div>
+        <button class="custom-alert_conf-btn">ok</button>
+      </div>
+    </div>
+    <div class="custom-confirm_wrapper">
+      <div class="custom-confirm_window">
+        <h2 class="custom-confirm_header">message:</h2>
+        <div class="custom-confirm_message"></div>
+        <button class="custom-confirm_conf-btn">ok</button>
+        <button class="custom-confirm_cancel-btn">cancel</button>
+      </div>
+    </div>
+    <div class="heal-in-space_wrapper">
+      <div class="heal-in-space_window">
+        <h2 class="heal-in-space_header">choose healed crew members:</h2>
+        <div class="heal-in-space_crew-wrapper"></div>
+        <button class="heal-in-space_conf-btn">ok</button>
+      </div>
+    </div>
+    <footer class="footer"></footer>
+    <script src="js/starship.js"></script>
+    <script src="js/form_scripts.js"></script>
+    <script src="js/map_scripts.js"></script>
+    <script src="js/cards.js"></script>
+    <script src="js/styles_changing.js"></script>
+  </body>
+</html>

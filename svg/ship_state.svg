@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="51px" height="51px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 791 794"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str1 {stroke:#2B2A29;stroke-width:16;stroke-miterlimit:22.9256}
+    .str0 {stroke:black;stroke-width:16;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+    .fil2 {fill:#CCCCCC}
+    .fil1 {fill:#FF9933}
+   ]]>
+  </style>
+ </defs>
+ <g id="ship_x0020_state">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0 str0" d="M396 487l-282 279 -84 -83 282 -279m84 -83l120 -118 84 83 -120 118m-258 -89l263 259m83 -83l-262 -259m-149 -212c2,0 4,0 6,0 86,0 155,69 155,153 0,21 -4,41 -12,59m-84 83c-18,8 -38,12 -59,12 -86,0 -155,-69 -155,-154 0,-2 0,-5 0,-7m0 0l58 57m148 -146l-57 -57m57 57l-30 116 -118 30m567 563c-1,0 -3,0 -5,0 -86,0 -155,-69 -155,-153 0,-21 4,-41 12,-59m83 -83c19,-7 39,-12 60,-12 86,0 155,69 155,154 0,2 0,5 0,7m0 0l-58 -57m-149 147l57 56m-57 -56l31 -117 118 -30m-167 -339l-131 -129 106 -104 193 191m-126 84l101 100 25 -184"/>
+  <polygon class="fil1 str1" points="114,766 396,487 312,404 30,683 "/>
+  <polygon class="fil1 str1" points="396,321 480,404 600,286 558,244 516,203 "/>
+  <path class="fil2 str1" d="M480 404l-84 -83 -90 -89c8,-18 12,-38 12,-59 0,-84 -69,-153 -155,-153 -2,0 -4,0 -6,0l57 57 -30 116 -118 30 -58 -57c0,2 0,5 0,7 0,85 69,154 155,154 21,0 41,-4 59,-12l90 89 84 83 89 87c-8,18 -12,38 -12,59 0,84 69,153 155,153 2,0 4,0 5,0l-57 -56 31 -117 118 -30 58 57c0,-2 0,-5 0,-7 0,-85 -69,-154 -155,-154 -21,0 -41,5 -60,12l-88 -87z"/>
+  <polygon class="fil2 str1" points="516,203 558,244 600,286 701,386 726,202 533,11 427,115 "/>
+ </g>
+</svg>
