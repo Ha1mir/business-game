@@ -301,9 +301,6 @@ const incedentsFunctions = {
         galaxyMapDOM.renderCustomAlert("Using laser weapon B, armourer cannot fully defence starship from corsars.");
         return false;
       } else {
-
-        // Testing of this case is needed
-
         this.daysForRepair = 3;
         this.daysPass(20);
         this.spendFuel(this.fuelDayConsume * 20);
@@ -573,9 +570,6 @@ const incedentsFunctions = {
         galaxyMapDOM.renderCustomAlert("Using laser weapon B, armourer cannot fully defence starship from corsars.");
         return false;
       } else {
-
-        // Testing of this case is needed
-
         this.daysPass(5);
         this.spendFuel(this.fuelDayConsume * 5);
         galaxyMapDOM.renderCustomAlert("Fly to Cremmin");
@@ -981,7 +975,7 @@ const casesCount = {
     incedentsFunctions.allagad_enernova[0],
   ],
   nomrid_allagad: [
-    // incedentsFunctions.nomrid_allagad[0],
+    incedentsFunctions.nomrid_allagad[0],
     incedentsFunctions.nomrid_allagad[1],
   ],
   nomrid_baldoc: [

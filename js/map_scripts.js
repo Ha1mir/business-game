@@ -194,7 +194,7 @@ const galaxyMapDOM = {
 
       const crewMemberNameElement = document.createElement("span");
       crewMemberWrapper.appendChild(crewMemberNameElement);
-      crewMemberWrapper.classList.add("crew-member-name");
+      crewMemberNameElement.classList.add("crew-member-name");
       crewMemberNameElement.textContent = (sickCrewMember ? sickCrewMember : "Player") + ": ";
 
       if (starship.aidkitsA > 0) {

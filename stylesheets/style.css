@@ -44,8 +44,9 @@ body {
   min-width: 320px;
 
   border: 1px solid white;
-  background-image: url("../svg/background.svg");
+  background-image: url("../images/bg/bg-small-portr.jpg");
   background-size: cover;
+  background-color: black;
 }
 
 .header {
@@ -733,7 +734,7 @@ body {
   padding: 10px;
 
   border: 2px solid white;
-  background-color: rgb(60, 60, 60);;
+  background-color: rgb(60, 60, 60);
 }
 
 .custom-alert_header {
@@ -798,12 +799,14 @@ body {
   padding: 10px;
 
   border: 2px solid white;
-  background-color: black;
+  background-color: rgb(60, 60, 60);
 }
 
 .custom-confirm_header {
   width: 100%;
   margin-bottom: 10px;
+
+  text-transform: capitalize;
 }
 
 .custom-confirm_message {
@@ -815,12 +818,44 @@ body {
   width: 50px;
   height: 30px;
   margin: 0 auto;
+
+  color: white;
+  text-transform: capitalize;
+
+  background-color: black;
+}
+
+.custom-confirm_conf-btn:hover {
+  color: black;
+
+  background-color: white;
+}
+
+.custom-confirm_conf-btn:focus {
+  outline: 1px solid white;
+  outline-offset: 1px;
 }
 
 .custom-confirm_cancel-btn {
   width: 50px;
   height: 30px;
   margin: 0 auto;
+
+  color: white;
+  text-transform: capitalize;
+
+  background-color: black;
+}
+
+.custom-confirm_cancel-btn:hover {
+  color: black;
+
+  background-color: white;
+}
+
+.custom-confirm_cancel-btn:focus {
+  outline: 1px solid white;
+  outline-offset: 1px;
 }
 
 /* heal in space */
@@ -844,22 +879,109 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  flex-direction: column;
   row-gap: 5px;
   width: 300px;
   padding: 10px;
 
   border: 2px solid white;
-  background-color: black;
+  background-color: rgb(60, 60, 60);
 }
 
 .heal-in-space_header {
   width: 100%;
   margin-bottom: 10px;
+
+  text-align: center;
+}
+
+.heal-in-space_crew-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.crew-member-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.crew-member-name {
+  text-transform: capitalize;
+}
+
+.crew-member-use-a {
+  width: 40px;
+  height: 20px;
+  margin: 0 auto;
+
+  color: white;
+  text-transform: capitalize;
+
+  background-color: black;
+}
+
+.crew-member-use-a:hover {
+  color: black;
+
+  background-color: white;
+}
+
+.crew-member-use-a:focus {
+  outline: 1px solid white;
+  outline-offset: 1px;
+}
+
+.crew-member-use-b {
+  width: 40px;
+  height: 20px;
+  margin: 0 auto;
+
+  color: white;
+  text-transform: capitalize;
+
+  background-color: black;
+}
+
+.crew-member-use-b:hover {
+  color: black;
+
+  background-color: white;
+}
+
+.crew-member-use-b:focus {
+  outline: 1px solid white;
+  outline-offset: 1px;
+}
+
+.heal-in-space_conf-btn {
+  width: 40px;
+  height: 20px;
+  margin: 0 auto;
+
+  color: white;
+  text-transform: capitalize;
+
+  background-color: black;
+}
+
+.heal-in-space_conf-btn:hover {
+  color: black;
+
+  background-color: white;
+}
+
+.heal-in-space_conf-btn:focus {
+  outline: 1px solid white;
+  outline-offset: 1px;
 }
 
 @media (orientation: landscape) {
   .main {
     flex-direction: row;
+
+    background-image: url("../images/bg/bg-small-ls.jpg");
   }
 
   .header {
@@ -928,6 +1050,14 @@ body {
     width: 500px;
   }
 
+  .custom-confirm_window {
+    width: 500px;
+  }
+
+  .heal-in-space_window {
+    width: 500px;
+  }
+
   .main_glx-map_wrapper {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(6, calc(((100vh - 380px) / 6) - 10px));
@@ -952,6 +1082,8 @@ body {
 
   .main {
     max-width: 1200px;
+
+    background-image: url("../images/bg/bg-big-ls.jpg");
   }
 
   .main_init-form-wrapper {
@@ -972,11 +1104,23 @@ body {
 }
 
 @media (min-height: 900px) and (min-width: 1024px) and (orientation: portrait) {
+  .main {
+    background-image: url("../images/bg/bg-big-portr.jpg");
+  }
+
   .main_init-form {
     width: 80%;
   }
 
   .custom-alert_window {
+    width: 500px;
+  }
+
+  .custom-confirm_window {
+    width: 500px;
+  }
+
+  .heal-in-space_window {
     width: 500px;
   }
 
@@ -1018,6 +1162,14 @@ body {
   }
 
   .custom-alert_window {
+    width: 600px;
+  }
+
+  .custom-confirm_window {
+    width: 600px;
+  }
+
+  .heal-in-space_window {
     width: 600px;
   }
 }

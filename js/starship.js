@@ -81,25 +81,25 @@ class Starship extends StarshipConsts {
   constructor() {
     super(StarshipConsts);
     this._shipWeight = 40700;
+    this.teamName = "Voyager";
+    this.bank = 100000;
+    this.crew = 7;
+    this.days = 0;
+    this.food = 0;
+    this.fuel = 0;
+    this.aidkitsA = 7;
+    this.aidkitsB = 0;
+    // this.shuttles = [];
+    this.ammos = [];
+    this._specialists = [];
+    this.currentLocation = "base";
+    this.shipInSpace = true;
+    this.daysForRepair = 0;
+    this.daysForHeal = 0;
+    this.healPriceOnPlanet = 0;
+    this.sickCrewMembers = [];
   }
 
-  teamName = "Voyager";
-  bank = 100000;
-  crew = 7;
-  days = 0;
-  food = 0;
-  fuel = 0;
-  aidkitsA = 7;
-  aidkitsB = 0;
-  // shuttles = [];
-  ammos = [];
-  _specialists = [];
-  currentLocation = "base";
-  shipInSpace = true;
-  daysForRepair = 0;
-  daysForHeal = 0;
-  healPriceOnPlanet = 0;
-  sickCrewMembers = [];
   get shipWeight() {
     return this._shipWeight;
   }
@@ -455,7 +455,7 @@ class Starship extends StarshipConsts {
   }
 
   runWinActions() {
-    galaxyMapDOM.renderCustomAlert("You have reached Enernova! You win!");
+    galaxyMapDOM.renderCustomAlert("You have reached Enernova! You won!");
     starship = new Starship();
     starshipStatsPanelElements.statsRender();
   }
