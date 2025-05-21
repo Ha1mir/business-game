@@ -143,8 +143,6 @@ const galaxyMapDOM = {
   },
   renderLandOnPlanet(destinationElement) {
     this.planetsInterfaceDOM.wrapper.style.display = "flex";
-    // this.planetsInterfaceDOM.wrapper.style.backgroundImage = `url("/images/${destinationElement.dataset.planetName}.jpg")`;
-    this.planetsInterfaceDOM.wrapper.style.backgroundImage = `url("images/me3_citadel-wallpaper-1920x1080.jpg")`;
     this.planetsInterfaceDOM.planetName.textContent = `Welcome to ${destinationElement.dataset.planetName}`;
   },
   renderTakeoffFromPlanet() {

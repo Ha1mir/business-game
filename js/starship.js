@@ -85,8 +85,8 @@ class Starship extends StarshipConsts {
     this.bank = 100000;
     this.crew = 7;
     this.days = 0;
-    this.food = 0;
-    this.fuel = 0;
+    this.food = 5000;
+    this.fuel = 5000;
     this.aidkitsA = 7;
     this.aidkitsB = 0;
     // this.shuttles = [];
@@ -450,14 +450,23 @@ class Starship extends StarshipConsts {
 
   runLoseGameActions(loseConditionsMessages) {
     galaxyMapDOM.renderCustomAlert(`${loseConditionsMessages}\nYou lose!`);
-    starship = new Starship();
-    starshipStatsPanelElements.statsRender();
+    this.resetGame();
   }
 
   runWinActions() {
     galaxyMapDOM.renderCustomAlert("You have reached Enernova! You won!");
+    this.resetGame();
+  }
+
+  resetGame() {
     starship = new Starship();
     starshipStatsPanelElements.statsRender();
+    galaxyMapDOM.renderFlyToDestination(galaxyMapDOM.currentLocationElement());
+    galaxyMapDOM.renderPossibleFlyToButtons();
+    galaxyMapDOM.renderPossibleLandButton();
+    initFormInputs.initFormWrapper.style.display = "flex";
+    galaxyMapDOM.renderTakeoffFromPlanet();
+    initFormInputs.initForm.reset();
   }
 
   checkShipStateWarning() {

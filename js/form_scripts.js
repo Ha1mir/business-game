@@ -83,6 +83,7 @@ starshipStatsPanelElements.hideStatsPanelButton.addEventListener("click", starsh
 
 const initFormInputs = {
   initFormWrapper: document.querySelector(".main_init-form-wrapper"),
+  initForm: document.querySelector(".main_init-form"),
   initFormSubmitter: document.querySelector(".init-form_submit"),
   teamName: document.querySelector(".init-form_team-name"),
   specialists: document.getElementsByClassName("specs-block_add-spec"),
