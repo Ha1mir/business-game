@@ -508,5 +508,10 @@
     <script src="js/cards.js"></script>
     <script src="js/styles_changing.js"></script>
     <script src="js/rules.js"></script>
+    <script>
+      window.addEventListener("resize", e => {
+        document.body.style.height = document.documentElement.clientHeight;
+      });
+    </script>
   </body>
 </html>
