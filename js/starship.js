@@ -559,6 +559,10 @@ class Starship extends StarshipConsts {
       errorMessages.push("You don't have enough money for this amount of supplies.");
     }
 
+    if (this.shipWeight > this.maxShipWeight) {
+      errorMessages.push("Your ship is to heavy.");
+    }
+
     if (this.food <= 0) {
       errorMessages.push("Your food supplies is empty. Add some food.");
     }

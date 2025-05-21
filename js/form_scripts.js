@@ -1,5 +1,8 @@
 const starshipStatsPanelElements = {
   teamNameElement: document.querySelector(".header_team-name"),
+  hideStatsPanelButton: document.querySelector(".game-rules_hide-stats"),
+  statListElement: document.querySelector(".header_stat-list"),
+  equipmentWrapperElement: document.querySelector(".header_equip"),
   statListElements: {
     yonkelsElement: document.querySelector(".stat-list_yonkels"),
     foodElement: document.querySelector(".stat-list_food"),
@@ -68,8 +71,15 @@ const starshipStatsPanelElements = {
       crewMemberElement.setAttribute("alt", `${crewMemberName} image`);
       crewMemberElement.setAttribute("title", crewMemberName);
     }
-  }
+  },
+  hideStatsPanelButtonCallback(e) {
+    starshipStatsPanelElements.statListElement.classList.toggle("header_hide-stats");
+    starshipStatsPanelElements.equipmentWrapperElement.classList.toggle("header_hide-stats");
+    e.target.classList.toggle("game-rules_hide-stats_closed");
+  },
 }
+
+starshipStatsPanelElements.hideStatsPanelButton.addEventListener("click", starshipStatsPanelElements.hideStatsPanelButtonCallback);
 
 const initFormInputs = {
   initFormWrapper: document.querySelector(".main_init-form-wrapper"),
@@ -141,8 +151,6 @@ const initFormInputs = {
 };
 
 initFormInputs.initializeFormListeners = (function () {
-  this.food.addEventListener("change", this.foodCallback);
-
   this.initFormSubmitter.addEventListener("click", () => {
     const checkStatsAtStart = starship.checkStatsAtStart();
     if (checkStatsAtStart) {

@@ -39,3 +39,4 @@ window.addEventListener("load", () => {
     galaxyMapDOM.renderFlyToDestination(galaxyMapDOM.currentLocationElement());
   }
 });
+

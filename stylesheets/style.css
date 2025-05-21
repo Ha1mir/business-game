@@ -36,6 +36,105 @@ body {
   color: white;
 }
 
+.game-rules_wrapper {
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+
+  overflow: auto;
+  background-color: black;
+}
+
+.game-rules_close-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.game-rules_close-btn:hover {
+  background-color: grey;
+
+  color: white;
+}
+
+.game-rules_close-btn:active {
+  background-color: grey;
+
+  color: white;
+}
+
+.game-rules_wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.game-rules_hide-stats {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 1.8rem;
+  height: 1.8rem;
+
+  background-image: url("../svg/eye/eye-open.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  background-position: center;
+}
+
+.game-rules_hide-stats_closed {
+  background-image: url("../svg/eye/eye-closed.svg");
+}
+
+.player-guide_article {
+  margin-top: 1.4rem;
+
+  text-align: justify;
+  text-indent: 1.4rem;
+}
+
+.player-guide_part-header {
+  margin-top: 1rem;
+}
+
+.game-rules_paragraph {
+  margin-top: 0.8rem;
+}
+
+.game-rules_bold {
+  font-weight: bold;
+}
+
+.game-rules_list {
+  margin-left: 1.4rem;
+
+  text-indent: 0;
+}
+
+.game-rules_list-item {
+  margin-top: 0.8rem;
+
+  list-style-type: disc;
+}
+
+.player-guide_table {
+  margin: 1.4rem auto 0;
+
+  border-collapse: collapse;
+}
+
+.player-guide_table td {
+  padding: 5px;
+
+  text-transform: capitalize;
+
+  border: 1px solid white;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -62,6 +161,30 @@ body {
   background-color: rgb(7, 34, 85);
 
   overflow-y: auto;
+}
+
+.header_rules-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 1.8rem;
+  height: 1.8rem;
+
+  background-color: white;
+
+  color: black;
+}
+
+.header_rules-btn:hover {
+  background-color: grey;
+
+  color: white;
+}
+
+.header_rules-btn:active {
+  background-color: grey;
+
+  color: white;
 }
 
 .header_team-name {
@@ -113,6 +236,10 @@ body {
   margin-top: 5px;
 
   text-transform: capitalize;
+}
+
+.header_hide-stats {
+  opacity: 0;
 }
 
 .equip_specs-wrapper_spec-img {
@@ -183,7 +310,7 @@ body {
 }
 
 .main_init-form-wrapper {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -203,7 +330,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 300px;
+  width: 90%;
   padding: 5px;
 
   text-transform: capitalize;
@@ -213,10 +340,20 @@ body {
 }
 
 .init-form_team-name-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin: 5px;
 
   font-size: 1.6rem;
   font-weight: bold;
+}
+
+.init-form_team-name {
+  height: 1.8rem;
+  padding: 2px;
+
+  font-size: 1rem;
 }
 
 .init-form_specs-block {
@@ -237,7 +374,7 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 2px;
+  gap: 5px;
   width: calc(50% - 10px);
   margin: 5px;
 }
@@ -254,13 +391,17 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 2px;
+  gap: 5px;
   width: calc(50% - 10px);
   margin: 5px;
 }
 
 .meds-block_add-meds {
-  width: 40px;
+  width: 2rem;
+  height: 1.6rem;
+  padding: 2px;
+
+  font-size: 1rem;
 }
 
 .init-form_shuttles-block {
@@ -285,11 +426,17 @@ body {
 }
 
 .ammo-block_add-shield-label {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
   width: calc(50% - 10px);
   margin: 5px;
 }
 
 .ammo-block_add-lasgun-label {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
   width: calc(50% - 10px);
   margin: 5px;
 }
@@ -317,6 +464,18 @@ body {
   height: 30px;
 
   text-transform: capitalize;
+}
+
+.init-form_submit:hover {
+  background-color: grey;
+
+  color: white;
+}
+
+.init-form_submit:active {
+  background-color: grey;
+
+  color: white;
 }
 
 /* map */
@@ -988,15 +1147,6 @@ body {
     width: 35%;
   }
 
-  .main_init-form-wrapper {
-    justify-content: flex-end;
-  }
-
-  .main_init-form {
-    right: 20px;
-    width: 60%;
-  }
-
   .specs-block_add-spec-label {
     width: calc(25% - 10px);
   }
@@ -1020,11 +1170,6 @@ body {
   .main {
     flex-direction: row;
     min-width: 640px;
-  }
-
-  .main_init-form {
-    right: 20px;
-    width: 65%;
   }
 
   .main_glx-map {
@@ -1088,10 +1233,6 @@ body {
 
   .main_init-form-wrapper {
     justify-content: center;
-  }
-
-  .main_init-form {
-    width: 600px;
   }
 
   .main_glx-map {
